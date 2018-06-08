@@ -21,12 +21,20 @@ h2 {
 }
 body{
     background-color:white;
+    padding: 0;
+    margin:0;
  
 }
 li{
     display: inline;
     padding: 55px;
     text-decoration: none;
+}
+
+.vision-tag {
+  display: grid;
+  grid-column:1/4;
+  overflow:hidden;
 }
 
 .toggle {
@@ -40,12 +48,7 @@ li{
 
 
 
-@media screen and (max-width: 768px){
-    
-    .toggle{
-        display: none;
-    }
-}
+
 
 header {
     display:inline;
@@ -118,15 +121,29 @@ footer  .row {
 }
 
 @media only screen and (max-width: 960px){
-    .wrapper-menu {
+     .wrapper-menu{
+        display : block;
+        width: 100%;
+        
+        
+    }   
+    
+    .sticky img {
+        display:none;
+    }   
+    
+    .wrapper-menu img {
+        width: 400px;
+    }
+    .wrapper-menu ul  {
+        padding: 1.45rem;
+        border: solid 1.25px green;
+    }
+    
+    .responsive-bar {
         display: none;
     }
-    .responsive-bar {
-        display: block;
-    }
-    html {
-        font-size: 12px
-    }
+    
 }
 @media only screen and (min-width: 960px){
     .wrapper-menu {
@@ -155,7 +172,7 @@ footer  .row {
     text-decoration-color: white;
 }
 
-.wrapper-menu li:active {
+.wrapper-menu li a:active {
     background: green;
     color: white;
 }
@@ -659,20 +676,85 @@ footer ul{
     top: 15.25rem;
     margin: 1.23rem;
 }
+.active {
+ background: green;   
+}
+}
 @-ms-viewport{
   width: device-width;
 }
 @media only screen and (max-width: 700px){
     
-    .wrapper-menu img{
+      .wrapper-menu{
+        display : block;
         width: 100%;
-    }
-   .wrapper-menu ul{
-        width: 100%;
-       overflow: auto;
+        
+        
+    }   
+    
+    .sticky img {
+        display:none;
+    }   
+    
+    .wrapper-menu ul  {
+        padding: 1.45rem;
+        border: solid 1.25px green;
     }
     
+    .responsive-bar {
+        display: none;
+    }
+    
+    .jumbotron .container .row h2 {
+        text-align:center;
+        font-size: 1.75rem;
+    }
+    
+    .col-sm-10 {
+        width: 100%;
+        position: relative;
+        left:0; 
+        
+    }
 }
+
+@media only screen and (max-width: 600px){
+    .wrapper-menu{
+        display : block;
+        width: 100%;
+        
+        
+    }   
+    
+    .sticky img {
+        display:none;
+    }   
+    
+    .wrapper-menu img {
+        width: 400px;
+    }
+    .wrapper-menu ul  {
+        padding: 1.45rem;
+        border: solid 1.25px green;
+    }
+    
+    .responsive-bar {
+        display: none;
+    }
+    
+    .jumbotron .container .row h2 {
+        text-align:center;
+        font-size: 1.5rem;
+    }
+    
+    .col-sm-10 {
+        width: 100%;
+        position: relative;
+        left:0; 
+        
+    }
+}
+
 
 input[type=text], select, textarea {
     width: 100%;
@@ -701,11 +783,13 @@ input[type=submit]:hover {
 .wrapper-1 {
     
     display: grid;
-    grid-template-columns: 40% 30% 30%;
+    grid-auto-colums:auto;
     padding: 1.75rem;
     grid-column-gap: 1rem;
     margin-top: 1.75rem;
     font-weight: 600;
+    break-inside:avoid;
+    border-radius: 5px;
 }
 
 .wrapper-1 > div {
@@ -716,12 +800,13 @@ input[type=submit]:hover {
     
 }
 
-.wrapper-1 > div:nth-child(odd){
+.wrapper-1 > div:nth-child(even){
     background: #90FF58;
 }
 .pta-wrapper
 {
     display: grid;
+    grid-template-columns: repeat(autofit , (min-max: 450px , 1fr));
     
 }
 
@@ -730,8 +815,11 @@ input[type=submit]:hover {
     bottom: 0;
     
 }
+
 .nested {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2.5rem;
+    grid-column-gap: 3.5rem;
+    shape-outside: circle();
 }
+
