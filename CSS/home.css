@@ -1,0 +1,737 @@
+html{
+    font-size: 16px;
+}
+ul {
+    display: inline;
+    margin-top: 25px;
+    
+    
+}
+h2 {
+    font-size: 2.5rem;
+    font-family: "Pangolin";
+    color: aliceblue;
+}
+#logo{
+    font-size: 2.25rem;
+}
+.row{
+    margin: 1%;
+    clear:both;
+}
+body{
+    background-color:white;
+ 
+}
+li{
+    display: inline;
+    padding: 55px;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: lime;
+    text-align: right;
+    display: none;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 768px){
+    
+    .toggle{
+        display: none;
+    }
+}
+
+header {
+    display:inline;
+    margin: 20px;
+    position: relative;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.75rem;
+    font-family: "Pangolin";
+}
+
+footer  .row {
+     border: solid 5px green;
+     border-radius: 10px;
+    
+}
+
+.wrapper-menu {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-columns: auto;
+    padding: 1rem;
+    border-top: solid 2px green;
+    border-bottom: solid 2px green;
+    background: rgb(0.255.0);
+}
+
+.wrapper-menu ul {
+    display: inline;
+    grid-auto-columns: auto;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 5rem; 
+    border: solid 5.5px green;
+    border-radius: 5px;
+    
+    overflow: hidden;
+}
+
+
+.responsive-bar {
+    
+    margin: 0 ;
+    padding: 3px 0;
+    color: black;
+    
+    width: 100%;
+    cursor: pointer;
+    background: lime;
+    display: none;
+    clear:both;
+    height: auto;
+    overflow: hidden;
+     background: rgb(162, 237, 14, .5);
+    border-bottom: solid 2px green;
+     border-top: solid 2px green;
+}
+.responsive-bar img {
+    float: left;
+    padding: 1.25rem;
+}
+
+.responsive-bar h4 {
+    float: right;
+    
+}
+
+@media only screen and (max-width: 960px){
+    .wrapper-menu {
+        display: none;
+    }
+    .responsive-bar {
+        display: block;
+    }
+    html {
+        font-size: 12px
+    }
+}
+@media only screen and (min-width: 960px){
+    .wrapper-menu {
+        display:grid ;
+    }
+}
+
+.menu {
+    padding: 3rem;
+    margin: 3rem;
+    position: relative;
+    top: 4.5rem;
+    float: right;
+      background: rgb(162, 237, 14, .5);
+    font-family: "Pangolin";
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.wrapper-menu ul li a {
+    text-decoration: none;
+}
+
+.wrapper-menu li:hover{
+    background: green;
+    text-decoration-color: white;
+}
+
+.wrapper-menu li:active {
+    background: green;
+    color: white;
+}
+
+#logo {
+     margin-top: 0;
+    padding: 1.25rem;
+    
+  
+}
+
+nav li{
+    padding: 1rem;
+    
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(162, 237, 14, 0.5);
+}
+
+nav 
+{
+    position: relative;
+    right: -7.75rem;
+    top: 7rem;
+   margin-bottom: 0;
+    bottom: 15rem;
+    border:solid 3.5px green;
+    border-radius: 5px;
+    height: 5.75rem;
+}
+ul{
+    width: 80%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li a
+    {
+        text-decoration: none;
+        list-style:none;
+        text-decoration-line: none;
+        color: black;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    
+}
+
+nav ul li:hover{
+    background: green;
+    color : white;
+    
+}
+/*
+
+#navigation
+{
+    font-size: 1.45rem;
+    font-family: "Pangolin";
+    position: relative;
+    right: .9rem;
+    top: 55px;
+    font-weight: 800;
+    border-radius: 6px;
+    color: black;
+    background-color: whitesmoke;
+    padding-top: 55px;
+    
+    border: solid 5px green;
+    float: right;
+}
+*/
+*/
+/*#navigation li{
+    margin-left: 1.25%;
+} */
+.col-sm-7 text-right {
+    float: right;
+}
+
+#carousel-master{
+    border: solid 5px green;
+    margin-bottom: 1.25rem;
+    height: 26.75rem;
+    width: 250rem;
+    border-radius: 5px;
+    
+}
+
+.item active img{
+    
+}
+
+#slider {
+    margin-bottom: 1.25rem;
+}
+
+#slider img {
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    border: solid 5px green;
+    border-radius :5px;
+    padding-bottom: 0; 
+    margin-bottom: 1.25rem;
+    object-fit: fill;
+}
+
+button {
+    padding: 1.45rem;
+    border: none;
+    background: yellow;
+    font-size: 2rem;
+    color: white;
+    opacity: .8;
+    position: relative;
+    bottom: 20rem;
+}
+#box{
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.img-tag {
+    position: relative;
+    bottom: 15rem;
+    left: 6.5rem;
+    font-size: 2.75rem;
+    color: aliceblue;
+    font-family: "Pangolin";
+    font-weight: 600;
+}
+.next {
+    border-radius: 5px;
+    left: 76rem;
+    position:relative;
+    bottom: 20rem;
+    overflow: hidden;
+}
+.prev {
+    border-radius: 5px;
+    position: relative;
+    left:.45rem
+}
+
+.jumbotron {
+    background: url("../images/blooms-slide.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 400px;
+    border: solid 5px green;
+}
+
+.text-center{
+    margin-left: 190px;
+    padding: 25px;
+}
+.name{
+    margin-left: 25%;
+    font-size: 1.95rem;
+    font-family: "Pangolin";
+    position: relative;
+    bottom:4rem;
+    top:0;
+}
+.grid-name {
+    font-size: 2rem;
+    font-weight: 600;
+    grid-column: 1/4;
+    text-align: center;
+    font-family: "Pangolin"
+}
+
+.grid-content {
+    display: grid;
+    
+}
+
+#content{
+    padding: 1.25rem;
+    background-color: snow;
+    border: solid 5px green;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: .35rem;
+    grid-row-gap: .35rem;
+    
+   
+}
+.grid {
+    cursor: pointer;
+}
+
+.description{
+    padding: 20px;
+    position:relative;
+    bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-style: oblique;
+    color:black;
+    display: grid;
+    grid-column: 1/4;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.col-sm-10 {
+    position:relative;
+    left: 9rem;
+    width:100%;
+    
+}
+
+.vision-tag{
+    position: relative;
+    left: 18rem;
+    font-family: 'Gaegu';
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    bottom: 2.75rem;
+    width: 15rem;
+    display: grid;
+    grid-column: 1/4;
+        
+}
+
+blockquote {
+    width: 70%;
+    margin-left: 15%;
+    font-family: "Gaegu";
+    font-weight: 600;
+    padding: 20px;
+    font-size: 1.45rem;
+    position: relative;
+    bottom: 50px;
+    border: solid 3px;
+    border-radius: 5px;
+    color: floralwhite;
+    background-color: yellowgreen;
+    display: grid;
+    grid-column: 1/4;
+}
+
+.welcome{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: grid;
+    grid-column: 1/4;
+    margin-left: 10px;
+    font-family: "Pangolin";
+    /*align-content: center; */
+}
+
+#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal2{
+    display: none;
+}
+.modal1{
+    display: none;
+}
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Buttons */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close1 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.grid {
+   overflow: hidden;
+   border: solid .5px yellow;
+   border-radius: 3px;
+    
+}
+.grid img {
+    background-size: cover;
+    padding : 0;
+}
+
+.gallery-item-desc {
+    padding: 1.25rem;
+    font-family: "Gaegu";
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.container{
+    align-content: center;
+
+}
+footer{
+    position: relative;
+    bottom: 0;
+    top:2.5rem;
+    width: 100%;
+    display: inline;
+    }
+footer .row{
+    
+}
+#footer-name{
+    padding: 1.25rem;
+    right: 11.25rem;
+    position: relative;
+    top: 22.25rem;
+    margin-top: 1.9rem;
+    padding-top: .75em;
+    font-size: .75rem;
+    align-content: center;
+    height: 2rem;
+    
+        }
+.pta {
+    position: relative;
+    left: .25rem;
+    font-family: "Gloria Hallelujah";
+    font-size: 1.75rem;
+    padding: 1.25rem;
+    margin-right: 6rem;
+}
+
+.grid img {
+}
+/*
+footer .row
+{
+    position: relative;
+    top: 10rem;
+    bottom: 0;
+    height: 20rem;
+    border: solid 5px green;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+*/
+#content-desc {
+    font-size: 1.05rem;
+    position: relative;
+    right: -1rem;
+    margin-top: 10%;
+    
+    margin-right: 5%;
+}
+
+#social
+{
+    height: 10%;
+    width: 10%;
+    padding: 1.75rem;
+    margin: 5%;
+    margin-left: 5%;
+   
+    border: solid 2px green;
+    border-radius:15px;
+     
+    
+}
+#social-media{
+    position: relative;
+    left: 42rem;
+}
+
+.col-sm-2 img.resize
+{
+    width: 70px;
+    height: 70px;
+}
+footer ul{
+    position: relative;
+    top: 15.25rem;
+    margin: 1.23rem;
+}
+@-ms-viewport{
+  width: device-width;
+}
+@media only screen and (max-width: 700px){
+    
+    .wrapper-menu img{
+        width: 100%;
+    }
+   .wrapper-menu ul{
+        width: 100%;
+       overflow: auto;
+    }
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.wrapper-1 {
+    
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding: 1.75rem;
+    grid-column-gap: 1rem;
+    margin-top: 1.75rem;
+    font-weight: 600;
+}
+
+.wrapper-1 > div {
+    background: green;
+    padding: 1.75rem;
+    justify-content: center;
+    overflow: auto;
+    
+}
+
+.wrapper-1 > div:nth-child(odd){
+    background: #90FF58;
+}
+.pta-wrapper
+{
+    display: grid;
+    
+}
+
+#cp{
+    position: relative;
+    bottom: 0;
+    
+}
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2.5rem;
+}
